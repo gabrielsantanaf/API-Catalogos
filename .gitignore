@@ -1,0 +1,81 @@
+#############
+# Build
+#############
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+#############
+# Configuração local
+#############
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+.env
+
+#############
+# IDEs e ferramentas
+#############
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+#############
+# Logs
+#############
+*.log
+logs/
+
+#############
+# Pacotes
+#############
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+#############
+# Publish
+#############
+wwwroot/
+publish/
+dist/
+
+#############
+# Sistema Operacional
+#############
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+#############
+# Testes
+#############
+TestResults/
+coverage/
+
+#############
+# Ferramentas externas
+#############
+node_modules/
+npm-debug.log
+yarn-error.log
+
+#############
+# Git
+#############
+*.orig
