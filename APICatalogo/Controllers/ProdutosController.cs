@@ -4,6 +4,7 @@ using APICatalogo.Context;
 using APICatalogo.Models;
 using System.Reflection.Metadata.Ecma335;
 using Microsoft.EntityFrameworkCore;
+using APICatalogo.Repositories;
 
 namespace APICatalogo.Controllers
 {
@@ -11,7 +12,7 @@ namespace APICatalogo.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IProdutoRepository _repository;
         private readonly IConfiguration _configuration;
         public ProdutosController(AppDbContext context, IConfiguration configuration)
         {

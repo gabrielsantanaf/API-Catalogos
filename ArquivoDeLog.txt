@@ -44,3 +44,22 @@ Information: 14 - Now listening on: http://26.207.217.252:5234
 Information: 0 - Application started. Press Ctrl+C to shut down.
 Information: 0 - Hosting environment: Development
 Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:04:16
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:04:17
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
