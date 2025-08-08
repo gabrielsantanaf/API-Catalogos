@@ -13,13 +13,13 @@ namespace APICatalogo.Controllers
     [ApiController]
     public class CategoriasController : ControllerBase
     {
-        private readonly IRepository<Categoria> _repository;
+        private readonly IUnitOfWork _uof;
         private readonly ILogger _logger;
 
-        public CategoriasController(ICategoriaRepository repository, ILogger<CategoriasController> logger)
+        public CategoriasController(ILogger<CategoriasController> logger, IUnitOfWork uof)
         {
-            _repository = repository;
             _logger = logger;
+            _uof = uof;
         }
 
         //[HttpGet("UsandoFromService/{nome}")]
@@ -40,7 +40,7 @@ namespace APICatalogo.Controllers
         //public async Task<ActionResult<IEnumerable<Categoria>>> GetCategoriasProdutos()
         //{
         //    _logger.LogInformation("===============Get api/categorias/produtos===================");
-                        
+
         //    return _context.Categorias.AsNoTracking().Include(p => p.Produtos).Where(c => c.CategoriaId <= 5).ToListAsync();
         //    //return _context.Categorias.Include(p => p.Produtos).ToList();
 
