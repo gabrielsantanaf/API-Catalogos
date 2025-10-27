@@ -739,3 +739,27 @@ Information: 14 - Now listening on: http://26.207.217.252:5234
 Information: 0 - Application started. Press Ctrl+C to shut down.
 Information: 0 - Hosting environment: Development
 Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 20101 - Executed DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 20101 - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `p`.`ProdutoId`, `p`.`CategoriaId`, `p`.`DataCadastro`, `p`.`Descricao`, `p`.`Estoque`, `p`.`ImagemUrl`, `p`.`Nome`, `p`.`Preco`
+FROM `Produtos` AS `p`
