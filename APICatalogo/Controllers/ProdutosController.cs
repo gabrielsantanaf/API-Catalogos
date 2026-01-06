@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using APICatalogo.Pagination;
 using Newtonsoft.Json;
 using X.PagedList;
+using Microsoft.AspNetCore.Authorization;
 
 namespace APICatalogo.Controllers
 {
@@ -85,6 +86,7 @@ namespace APICatalogo.Controllers
             return Ok(produtosDTO);
         }
 
+        [Authorize(Policy = "UserOnly")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get()
         {

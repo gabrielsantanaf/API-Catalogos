@@ -3,6 +3,7 @@ using APICatalogo.DTOs.Mappings;
 using APICatalogo.Filters;
 using APICatalogo.Pagination;
 using APICatalogo.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using X.PagedList;
@@ -48,6 +49,7 @@ namespace APICatalogo.Controllers
 
         [HttpGet]
         [ServiceFilter(typeof(ApiLoggingFilter))]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<CategoriaDTO>>> Get()
         {
            var categorias = await _uof.CategoriaRepository.GetAllAsync();
@@ -55,21 +57,12 @@ namespace APICatalogo.Controllers
             if(categorias is null)
                 return NotFound("Não existem categorias...");
 
-            var categoriasDto = new List<CategoriaDTO>();
-            foreach(var categoria in categorias)
-            {
-                var categoriaDto = new CategoriaDTO
-                {
-                    CategoriaId = categoria.CategoriaId,
-                    Nome = categoria.Nome,
-                    ImagemUrl = categoria.ImagemUrl
-                };
-                categoriasDto.Add(categoriaDto);
-            }
+            var categoriasDto = categorias.ToCategoriaDTOList();
 
             return Ok(categoriasDto);
         }
 
+        [Authorize]
         [HttpGet("pagination")]
         public async Task<ActionResult<IEnumerable<CategoriaDTO>>> Get([FromQuery] CategoriasParameters categoriasParameters)
         {
@@ -188,6 +181,7 @@ namespace APICatalogo.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(Policy = "AdminOnly")]
         public async Task<ActionResult<CategoriaDTO>> Delete(int id)
         {
             var categoria = await _uof.CategoriaRepository.GetAsync(c => c.CategoriaId == id);
