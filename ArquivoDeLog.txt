@@ -1414,3 +1414,403 @@ SET AUTOCOMMIT = 1;
 UPDATE `AspNetUsers` SET `AccessFailedCount` = @p0, `ConcurrencyStamp` = @p1, `Email` = @p2, `EmailConfirmed` = @p3, `LockoutEnabled` = @p4, `LockoutEnd` = @p5, `NormalizedEmail` = @p6, `NormalizedUserName` = @p7, `PasswordHash` = @p8, `PhoneNumber` = @p9, `PhoneNumberConfirmed` = @p10, `RefreshToken` = @p11, `RefreshTokenExpiryTime` = @p12, `SecurityStamp` = @p13, `TwoFactorEnabled` = @p14, `UserName` = @p15
 WHERE `Id` = @p16 AND `ConcurrencyStamp` = @p17;
 SELECT ROW_COUNT();
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 20101 - Executed DbCommand (59ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 20101 - Executed DbCommand (28ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 09:52:20
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 09:52:21
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 09:58:10
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 09:58:11
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (87ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 09:59:24
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 09:59:24
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+WHERE `c`.`CategoriaId` = @__id_0
+LIMIT 1
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 11:44:08
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 11:44:09
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 11:44:13
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 11:44:13
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 11:44:18
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 11:44:18
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 11:44:58
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 11:44:58
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Error: 1 - An unhandled exception has occurred while executing the request.
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:40:17
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:40:18
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:40:20
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:40:20
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:40:22
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:40:22
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:40:24
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:40:24
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:40:24
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:40:24
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:41:00
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:41:01
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:41:02
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:41:02
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:41:11
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:41:11
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:41:42
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:41:42
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:41:43
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:41:43
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:41:53
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:41:53
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:41:54
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:41:54
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:42:39
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:42:39
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:42:41
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:42:41
+Information: 0 - Status Code: 200
+Information: 0 - #################################################
+Information: 0 - ### Executando -> OnActionExecuting
+Information: 0 - #################################################
+Information: 0 - 00:42:50
+Information: 0 - ModelState: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+Information: 0 - #################################################
+Information: 20101 - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`CategoriaId`, `c`.`ImagemUrl`, `c`.`Nome`
+FROM `Categorias` AS `c`
+Information: 0 - ### Executando -> OnActionExecuted
+Information: 0 - #################################################
+Information: 0 - 00:42:50
+Information: 0 - Status Code: 200
+Information: 0 - #################################################

@@ -1,6 +1,7 @@
 ﻿using APICatalogo.DTOs;
 using APICatalogo.Models;
 using APICatalogo.Services;
+using APICatalogo.Validations;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -60,8 +61,8 @@ namespace APICatalogo.Controllers
 
                 var refreshToken = _tokenService.GenerateRefreshToken();
 
-                _ = int.TryParse(_configuration["JWT:RefreshTokenValidityInMinutes"],
-                                             out int refreshTokenValidityInMinutes);
+                _ = int.TryParse(_configuration["JWT:RefreshTokenValidityInMinutes"], 
+                                              out int refreshTokenValidityInMinutes);
 
                 user.RefreshToken = refreshToken;
 
