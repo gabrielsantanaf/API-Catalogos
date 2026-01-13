@@ -1814,3 +1814,37 @@ Information: 0 - #################################################
 Information: 0 - 00:42:50
 Information: 0 - Status Code: 200
 Information: 0 - #################################################
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Error: 1 - An unhandled exception has occurred while executing the request.
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Error: 1 - An unhandled exception has occurred while executing the request.
+Error: 1 - An unhandled exception has occurred while executing the request.
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
+Information: 14 - Now listening on: https://localhost:7183
+Information: 14 - Now listening on: http://localhost:5234
+Information: 14 - Now listening on: http://26.207.217.252:5234
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Development
+Information: 0 - Content root path: C:\cursos\cursoC#\CursoApi\APICatalogo\APICatalogo
