@@ -29,6 +29,8 @@ namespace APICatalogo.Controllers
             _mapper = mapper;
         }
 
+        public ProdutosController(IUnitOfWork uof, IMapper mapper) : this(null!, uof, mapper) { }
+
         [HttpGet("produtos/{id}")]
         public async Task<ActionResult <IEnumerable<ProdutoDTO>>> GetProdutoCategoria(int id)
         {
@@ -91,22 +93,31 @@ namespace APICatalogo.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProdutoDTO>>> Get()
         {
-
-            var produtos = await _uof.ProdutoRepository.GetAllAsync();
-            if (produtos is null)
+            try
             {
-                return NotFound("Produtos não encontrados...");
+                var produtos = await _uof.ProdutoRepository.GetAllAsync();
+
+                if (produtos is null)
+                {
+                    return NotFound("Produtos não encontrados...");
+                }
+
+                var produtosDTO = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
+                return Ok(produtosDTO);
             }
-
-            var produtosDTO = _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
-            return Ok(produtosDTO);
-
-
+            catch (Exception)
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("{id:int}", Name = "ObterProduto")]
         public async Task<ActionResult<ProdutoDTO>> Get(int id)
         {
+            if (id == null || id <= 0)
+            {
+                return BadRequest("ID de produto inválido");
+            }
 
             var produto = await _uof.ProdutoRepository.GetAsync(c => c.ProdutoId == id);  
             if (produto is null)
@@ -199,9 +210,3 @@ namespace APICatalogo.Controllers
         }
     }
 }
-
-
-
-
-
-

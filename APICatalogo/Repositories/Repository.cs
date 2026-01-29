@@ -15,7 +15,7 @@ namespace APICatalogo.Repositories
 
         public async Task<IEnumerable<T>> GetAllAsync()
         {
-           return await _context.Set<T>().AsNoTracking().ToListAsync();
+           return await _context.Set<T>().ToListAsync();
        
         }
         public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
