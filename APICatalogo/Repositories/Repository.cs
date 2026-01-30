@@ -15,11 +15,14 @@ namespace APICatalogo.Repositories
 
         public async Task<IEnumerable<T>> GetAllAsync()
         {
-           return await _context.Set<T>().ToListAsync();
-       
+            //Delay de consulta ao banco para ver o cache em ação
+            System.Threading.Thread.Sleep(3000);
+            return await _context.Set<T>().ToListAsync();       
         }
         public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
         {
+            //Delay de consulta ao banco para ver o cache em ação
+            System.Threading.Thread.Sleep(3000);
             return await _context.Set<T>().FirstOrDefaultAsync(predicate);
         }
 

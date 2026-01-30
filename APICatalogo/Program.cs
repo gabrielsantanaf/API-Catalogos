@@ -126,6 +126,9 @@ builder.Logging.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderCon
     LogLevel = LogLevel.Information
 }));
 
+//Construção do serviço de cache para implantar no controlador de categorias
+builder.Services.AddMemoryCache();
+
 builder.Services.AddAutoMapper(typeof(ProdutoDTOMappingProfile));
 
 // Fix configuration key paths: remove spaces after ':'
